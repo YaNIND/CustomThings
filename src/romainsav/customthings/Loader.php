@@ -37,7 +37,7 @@ class Loader extends PluginBase implements Listener {
 
     public function onEnable(): void {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->saveResource("items.json", true);
+        $this->saveResource("items.json");
         new ItemManager();
     }
 
